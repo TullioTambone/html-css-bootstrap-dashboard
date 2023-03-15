@@ -102,7 +102,6 @@ aside{
     border: 1px solid white;
 }
 
-
 .i-style{
     color: gray;
     border: 1px solid gray;
@@ -124,4 +123,16 @@ aside{
 
 .rounded-pill:hover{
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu{
+    background-color: #1b72e8;
+}
+
+.dropdown-menu li{
+    margin-left: 5px;
+}
+
+.dropdown-menu:hover{
+    cursor: pointer;
 }
