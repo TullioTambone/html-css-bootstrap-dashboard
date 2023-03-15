@@ -1,8 +1,37 @@
-@media screen and (min-width:1024px) {
-    
+@media screen and (min-width:992px) {
+
     aside{
         width: 100px;
         height: calc(100vh - 52px);
         font-size: 12px;
+    }
+    
+    #content{
+        height: calc(100vh - 68px);
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .right-top{
+        order: 1;
+    }
+
+    .middle-top{
+        order: 2;
+    }
+
+    .left-top{
+        order: 3;
+    }
+    #offcanvasRight{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:575.98px) {
+    .thief{
+        display: none;
     }
 }

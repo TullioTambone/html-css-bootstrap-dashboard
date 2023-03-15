@@ -22,7 +22,7 @@ li{
     margin-top: 12px;
 }
 
-.container-xl form{
+.container-fluid form{
     width: 60%;
 }
 
@@ -36,17 +36,92 @@ form .input-group .btn:hover{
     border-right: none;
 }
 
-.form-control{
+#style-nav{
     border-left: none;
 }
 
+/*ASIDE*/
+
 aside{
     height: calc(100vh - 76px);
-    width: 80px;
+    width: 60px;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
 
 #aside-list{
     padding-left: 0px;
+}
+
+#aside-list li{
+    padding: 0.5rem;
+}
+
+#aside-list li:hover{
+    background-color: gray;
+}
+
+/*CONTENT*/
+
+#content{
+   width: calc(100% - 60px);
+   height: calc(100vh - 76px);
+   overflow: auto;
+}
+
+/*BUNNER*/
+.bunner{
+    background-color: #1b72e8;
+}
+
+.rounded-pill{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#b-plus{
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    line-height: 0px;
+    height: 15px;
+    padding: 10px 5px;
+}
+
+.badge ul{
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    margin-left: 10px;
+}
+
+.badge ul li{
+    display: inline;
+}
+
+#offcanvasRightLabel{
+    border: 1px solid white;
+}
+
+
+.i-style{
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.table tr th:first-child{
+    width: 50%;
+}
+
+.accordion-item{
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+#offcanvasRight{
+    width: 50%;
+}
+
+.rounded-pill:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }

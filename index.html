@@ -21,7 +21,7 @@
 
             <!--navbar-->
             <nav class="navbar bg-body-white">
-                <div class="container-xl">
+                <div class="container-fluid">
 
                     <a class="navbar-brand">
                         <img src="./assets/img/logo.svg" alt="logo" height="35px" class="d-none d-lg-block">
@@ -33,7 +33,7 @@
                             <button class="btn" type="button" id="button-addon1">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input type="text" class="form-control bg-body-tertiary" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <input type="text" id="style-nav" class="form-control bg-body-tertiary" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Example text with button addon" aria-describedby="button-addon1">
                         </div>  
                     </form>
 
@@ -75,41 +75,479 @@
             </nav>
 
             <main>
-                <aside class="d-flex flex-column justify-content-between py-3">
-                    <div class="text-white d-flex justify-content-center">
-                        <ul id="aside-list">
-                            <li class="my-2 d-flex align-items-center">
-                                <i class="fa-solid fa-house"></i>
-                                <span class="ms-2 d-none d-lg-inline-block">
-                                    Home
-                                </span> 
-                            </li>
-                            <li class="my-2 d-flex align-items-center">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <span class="ms-2 d-none d-lg-inline-block">
-                                    Stats
-                                </span> 
-                            </li>
-                            <li class="my-2 d-flex align-items-center">
-                                <i class="fa-solid fa-signal"></i>
-                                <span class="ms-2 d-none d-lg-inline-block">
-                                    Signal
-                                </span> 
-                            </li>
-                        </ul>
+                <div class="d-flex">
+                    <div>
+                        <aside class="d-flex flex-column justify-content-between py-3">
+                            <div class="text-white d-flex justify-content-center">
+                                <ul id="aside-list">
+                                    <li class="d-flex align-items-center">
+                                        <div class="p-1">
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>                                
+                                        <div class="text-align-left ms-2  d-none d-lg-inline-block">
+                                            <span>
+                                                Home
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="p-1">
+                                            <i class="fa-solid fa-chart-simple"></i>
+                                        </div>                                
+                                        <div class="text-align-left ms-2 d-none d-lg-inline-block">
+                                            <span>
+                                                Stats
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="p-1">
+                                            <i class="fa-solid fa-signal"></i>
+                                        </div>                                    
+                                        <div class="text-align-left ms-2 d-none d-lg-inline-block">
+                                            <span>
+                                                Signal
+                                            </span> 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="text-white d-flex justify-content-center">
+                                <ul id="aside-list">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <span class="ms-2 d-none d-lg-inline-block">
+                                            Admin
+                                        </span> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
                     </div>
+                    
+                    <div id="content">
 
-                    <div class="text-white d-flex justify-content-center">
-                        <ul id="aside-list">
-                            <li class="d-flex align-items-center">
-                                <i class="fa-solid fa-gear"></i>
-                                <span class="ms-2 d-none d-lg-inline-block">
-                                    Admin
-                                </span> 
-                            </li>
-                        </ul>
+                        <!--bunner blu-->
+                        <div class="bunner py-4 px-4">
+                            <div class="row align-items-center">
+
+                                <div class="col-12 col-md-5 text-white left-top">
+                                    <div class="d-flex align-items-center">
+                                        <h2>Boolean</h2>
+                                        <a href="#">
+                                            <!--pillole-->
+                                            <span class="badge rounded-pill ms-2">Piano blaze</span>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span class="badge rounded-pill">Piano blaze</span>
+                                        <span style="letter-spacing: -5px;" class="me-2"> >></span>
+                                        
+                                        <div class="btn-group dropend">
+                                            <button type="button" id="b-plus" data-bs-toggle="dropdown" aria-expanded="false" class="badge rounded-pill d-lg-none">
+                                                +
+                                            </button>
+
+                                            <ul class="dropdown-menu">
+                                              <!-- Dropdown menu links -->
+                                                <li>
+                                                    <span class="badge rounded-pill">Boolean mobile app</span>
+                                                </li>
+                                                <li>
+                                                    <span class="badge rounded-pill">Boolean web app</span>
+                                                </li>
+                                                <li>
+                                                    <span class="badge rounded-pill">Boolean blog app</span>
+                                                </li>
+                                            </ul>
+                                        <span class="badge rounded-pill d-none d-lg-block">Boolean mobile app</span>
+                                        <span class="badge rounded-pill d-none d-lg-block">Boolean web app</span>
+                                        <span class="badge rounded-pill d-none d-lg-block">Boolean blog app</span>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-5  middle-top text-white">
+                                    <span>Studenti online negli ultimi 30 minuti</span>
+                                    <h3>125</h3>
+                                </div>
+                                
+                                <div class="col-12 col-md-2 right-top text-white">
+                                    Nuovo Studente
+                                    <button class="btn border text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        +
+                                    </button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <!--form-->
+                                            <form class="row g-3">
+
+                                                <div class="col-6">
+                                                    <label for="Name" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="Name">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <label for="Cognome" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="Cognome">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <label for="autoSizingInputGroup">Email</label>
+                                                    <div class="input-group">
+                                                      <div class="input-group-text">@</div>
+                                                      <input type="text" class="form-control" id="autoSizingInputGroup">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6">
+                                                  <label for="inputPassword4" class="label">Password</label>
+                                                  <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                                <div class="col-12">
+                                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                  <input type="text" class="form-control" id="inputAddress">
+                                                </div>
+                                                
+                                                <div class="col-6">
+                                                  <label for="inputCity" class="form-label">Città</label>
+                                                  <input type="text" class="form-control" id="inputCity">
+                                                </div>
+
+                                                <div class="col-4">
+                                                  <label for="inputState" class="form-label">Stato</label>
+                                                  <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>...</option>
+                                                  </select>
+                                                </div>
+
+                                                <div class="col-2">
+                                                  <label for="inputZip" class="form-label">CAP</label>
+                                                  <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                        
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                </div>
+
+                                                <div class="col-12">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                      Seleziona per proseguire
+                                                    </label>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                                  <button type="button" class="btn btn-warning">Svuota</button>
+                                                </div>
+                                              </form>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--contenuto della pagina-->
+                        <div class="container-fluid py-4 px-4">
+                            
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="card mt-3">
+                                        <div class="py-2 px-2 bg-body-tertiary">
+                                            <h2>Prossime classi</h2>
+                                        </div>
+
+                                        <div>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col" class="thief">Data inizio</th>
+                                                    <th scope="col" class="thief">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                  </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <!--1-->
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 75</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        15 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+                                                  <!--2-->
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 76</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        16 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 77</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        17 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-warning text-white">Process</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 78</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        18 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 79</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        19 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-danger">Failed</span>                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 80</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        20 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 81</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        21 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-danger">Failed</span>                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>
+                                                        <i class="fa-solid fa-code text-white bg-danger rounded-circle py-2 px-2"></i>
+                                                        <h6 class="d-inline-block">Classe 82</h6>
+                                                    </td>
+                                                    <td class="thief">
+                                                        22 Feb 2021
+                                                    </td>
+                                                    <td class="thief">
+                                                        20%
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil i-style"></i>
+                                                        <i class="fa-solid fa-trash i-style"></i>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3">
+                                        <div class="py-2 px-2 bg-body-tertiary">
+                                            <h2>F.A.Q.</h2>
+                                        </div>
+                                        <div class="accordion px-2 py-2" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="card mt-3">
+                                        <div class="py-2 px-2 bg-body-tertiary">
+                                            <h2>Todo</h2>
+                                        </div>
+                                        <div class="input-group pt-2 px-2">
+                                            <div class="input-group-text">
+                                              <input class="form-check-input mt-0"  type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="kickoff nuove classi">
+                                        </div>
+                                        <div class="input-group px-2">
+                                            <div class="input-group-text">
+                                              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Lezione su Bootstrap 5 in classe #75">
+                                        </div>
+                                        <div class="input-group px-2 pb-2">
+                                            <div class="input-group-text">
+                                              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Controllare usurname github stdenti">
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3">
+                                        <div>
+                                            <img src="./assets/img/stats.jpeg" alt="">
+                                        </div>
+                                        <div class="px-2 py-2 border-bottom border-secondary-subtle">
+                                            <h3>Utenti attivi</h3>
+                                            <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                        </div>
+                                        <div class="px-2 py-2 border-bottom border-secondary-subtle">
+                                            <span>Gennaio: 1200</span>
+                                        </div>
+                                        <div class="px-2 py-2 border-bottom border-secondary-subtle">
+                                            <span>Febbraio: 800</span>
+                                        </div>
+                                        <div class="px-2 py-2 border-bottom border-secondary-subtle">
+                                            <span>Marzo: 1500</span>
+                                        </div>
+                                        <div class="px-2 py-2">
+                                            <a href="#" class="text-decoration-underline">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    
                     </div>
-                </aside>
+                </div>
             </main>
             
         </div>
