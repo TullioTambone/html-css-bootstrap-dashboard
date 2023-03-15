@@ -1,0 +1,52 @@
+#web-viewport{
+    height: 100vh;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+#list-nav{
+    display: flex;
+    align-items: center !important;
+    margin-top: 12px;
+}
+
+.container-xl form{
+    width: 60%;
+}
+
+form .input-group .btn{
+    border: 1px solid lightgray;
+    border-right: none;
+}
+
+form .input-group .btn:hover{
+    border: 1px solid lightgray;
+    border-right: none;
+}
+
+.form-control{
+    border-left: none;
+}
+
+aside{
+    height: calc(100vh - 76px);
+    width: 80px;
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+#aside-list{
+    padding-left: 0px;
+}

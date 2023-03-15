@@ -1,0 +1,8 @@
+@media screen and (min-width:1024px) {
+    
+    aside{
+        width: 100px;
+        height: calc(100vh - 52px);
+        font-size: 12px;
+    }
+}
