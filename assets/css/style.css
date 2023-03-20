@@ -16,6 +16,8 @@ li{
     list-style-type: none;
 }
 
+/*NAVBAR*/
+
 #list-nav{
     display: flex;
     align-items: center !important;
@@ -40,13 +42,28 @@ form .input-group .btn:hover{
     border-left: none;
 }
 
+.d-m-nav{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
 /*ASIDE*/
 
 aside{
+    margin-top: 76px;
     height: calc(100vh - 76px);
     width: 60px;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
 }
 
 #aside-list{
@@ -64,6 +81,7 @@ aside{
 /*CONTENT*/
 
 #content{
+   margin-top: 76px; 
    width: calc(100% - 60px);
    height: calc(100vh - 76px);
    overflow: auto;
@@ -125,7 +143,7 @@ aside{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.dropdown-menu{
+.d-m-pills{
     background-color: #1b72e8;
 }
 
